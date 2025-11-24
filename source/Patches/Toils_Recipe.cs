@@ -1,6 +1,8 @@
-﻿using System;
-using HarmonyLib;
+﻿using HarmonyLib;
+using RimWorld;
+using System;
 using Verse.AI;
+using Verse;
 
 namespace SK_Inspired_Unique.Patches
 {
@@ -12,9 +14,15 @@ namespace SK_Inspired_Unique.Patches
         {
             public static void Postfix(ref Toil __result)
             {
+                Toil originalToil = __result;
                 Action originalInitAction = __result.initAction;
                 __result.initAction = delegate
                 {
+                    if (originalToil.actor.InspirationDef != InspirationDefOf.Inspired_Creativity)
+                    {
+                        originalInitAction();
+                        return;
+                    }
                     FINISHING_PRODUCT_FLAG = true;
                     originalInitAction();
                     FINISHING_PRODUCT_FLAG = false;

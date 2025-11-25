@@ -18,7 +18,7 @@ namespace SK_Inspired_Unique.Patches
                 Action originalInitAction = __result.initAction;
                 __result.initAction = delegate
                 {
-                    if (originalToil.actor.InspirationDef != InspirationDefOf.Inspired_Creativity)
+                    if (originalToil.actor.InspirationDef != InspirationDefOf.Inspired_Creativity || !Rand.Chance(ModSettings.craftSuccessChance)) 
                     {
                         originalInitAction();
                         return;

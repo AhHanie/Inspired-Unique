@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using System.Collections.Generic;
+using UnityEngine;
 using Verse;
 
 namespace SK_Inspired_Unique
@@ -15,8 +16,20 @@ namespace SK_Inspired_Unique
             LongEventHandler.QueueLongEvent(Init, "Inspired Unique Init", doAsynchronously: true, null);
         }
 
+        public override string SettingsCategory()
+        {
+            return "Inspired Unique";
+        }
+
+        public override void DoSettingsWindowContents(Rect rect)
+        {
+            ModSettingsWindow.Draw(rect);
+            base.DoSettingsWindowContents(rect);
+        }
+
         public void Init()
         {
+            GetSettings<ModSettings>();
             InitializeUniqueVariants();
             instance.PatchAll();
         }

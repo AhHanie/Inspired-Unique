@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
     <InspiredUnique.Settings.CraftChance.Label>Chance to craft a unique weapon</InspiredUnique.Settings.CraftChance.Label>
+    <InspiredUnique.Settings.ShowWeaponCustomizationMenu.Label>Show Weapon Customization Menu</InspiredUnique.Settings.ShowWeaponCustomizationMenu.Label>
+    <InspiredUnique.Settings.ShowWeaponCustomizationMenu.Tooltip>When enabled, a customization menu will appear when crafting unique weapons, allowing you to select traits and rename the weapon.</InspiredUnique.Settings.ShowWeaponCustomizationMenu.Tooltip>
 </LanguageData>

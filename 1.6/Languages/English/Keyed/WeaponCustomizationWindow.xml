@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <InspiredUnique.WeaponCustomizationWindow.Title>Customize Unique Weapon</InspiredUnique.WeaponCustomizationWindow.Title>
+    <InspiredUnique.WeaponCustomizationWindow.Label.WeaponName>Weapon Name:</InspiredUnique.WeaponCustomizationWindow.Label.WeaponName>
+    <InspiredUnique.WeaponCustomizationWindow.Label.SelectTraits>Quality: {0} - Select {1} trait(s)</InspiredUnique.WeaponCustomizationWindow.Label.SelectTraits>
+    <InspiredUnique.WeaponCustomizationWindow.Label.SelectTraitsCounter>Selected: {0}/{1}</InspiredUnique.WeaponCustomizationWindow.Label.SelectTraitsCounter>
+    <InspiredUnique.WeaponCustomizationWindow.Button.Confirm>Confirm</InspiredUnique.WeaponCustomizationWindow.Button.Confirm>
+    <InspiredUnique.WeaponCustomizationWindow.Messages.InvalidTraitNumber>You must select exactly {0} trait(s)</InspiredUnique.WeaponCustomizationWindow.Messages.InvalidTraitNumber>
+    <InspiredUnique.WeaponCustomizationWindow.Messages.SuccessMessage>Customized {0}!</InspiredUnique.WeaponCustomizationWindow.Messages.SuccessMessage>
+</LanguageData>

@@ -18,6 +18,7 @@ namespace SK_Inspired_Unique.Patches
                 if (uniqueVariant != null)
                 {
                     def = uniqueVariant;
+                    Toils_RecipePatches.uniqueWeaponDef = uniqueVariant;
                 }
             }
         }

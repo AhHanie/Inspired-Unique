@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DefModExtension_UniqueVariant.cs" />
+    <Compile Include="Dialog_UniqueWeaponCustomization.cs" />
     <Compile Include="Mod.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="ModSettingsWindow.cs" />

@@ -58,14 +58,14 @@ namespace SK_Inspired_Unique
                 case QualityCategory.Poor:
                 case QualityCategory.Normal:
                 case QualityCategory.Good:
-                    return 1;
+                    return ModSettings.maxSelectionsLow;
                 case QualityCategory.Excellent:
                 case QualityCategory.Masterwork:
-                    return 2;
+                    return ModSettings.maxSelectionsMid;
                 case QualityCategory.Legendary:
-                    return 3;
+                    return ModSettings.maxSelectionsHigh;
                 default:
-                    return 1;
+                    return ModSettings.maxSelectionsLow;
             }
         }
 
@@ -83,7 +83,7 @@ namespace SK_Inspired_Unique
 
             foreach (WeaponTraitDef trait in allTraits)
             {
-                if (availableTraits.Count >= 6)
+                if (availableTraits.Count >= ModSettings.maxGeneratedTraits)
                     break;
 
                 bool conflicts = false;

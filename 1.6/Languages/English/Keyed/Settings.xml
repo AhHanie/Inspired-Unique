@@ -3,4 +3,11 @@
     <InspiredUnique.Settings.CraftChance.Label>Chance to craft a unique weapon</InspiredUnique.Settings.CraftChance.Label>
     <InspiredUnique.Settings.ShowWeaponCustomizationMenu.Label>Show Weapon Customization Menu</InspiredUnique.Settings.ShowWeaponCustomizationMenu.Label>
     <InspiredUnique.Settings.ShowWeaponCustomizationMenu.Tooltip>When enabled, a customization menu will appear when crafting unique weapons, allowing you to select traits and rename the weapon.</InspiredUnique.Settings.ShowWeaponCustomizationMenu.Tooltip>
+    <InspiredUnique.Settings.CustomizationMenuNote.Label>These settings only apply when the Weapon Customization Menu is enabled:</InspiredUnique.Settings.CustomizationMenuNote.Label>
+    <InspiredUnique.Settings.MaxGeneratedTraits.Label>Max generated traits</InspiredUnique.Settings.MaxGeneratedTraits.Label>
+    <InspiredUnique.Settings.MaxGeneratedTraits.Tooltip>Controls how many non-conflicting traits are generated for the selection list.</InspiredUnique.Settings.MaxGeneratedTraits.Tooltip>
+    <InspiredUnique.Settings.MaxTraitSelections.Header>Max trait selections by quality:</InspiredUnique.Settings.MaxTraitSelections.Header>
+    <InspiredUnique.Settings.MaxTraitSelections.Low.Label>Awful-Good</InspiredUnique.Settings.MaxTraitSelections.Low.Label>
+    <InspiredUnique.Settings.MaxTraitSelections.Mid.Label>Excellent-Masterwork</InspiredUnique.Settings.MaxTraitSelections.Mid.Label>
+    <InspiredUnique.Settings.MaxTraitSelections.High.Label>Legendary</InspiredUnique.Settings.MaxTraitSelections.High.Label>
 </LanguageData>

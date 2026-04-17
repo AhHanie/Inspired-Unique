@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
     <InspiredUnique.Settings.CraftChance.Label>Chance to craft a unique weapon</InspiredUnique.Settings.CraftChance.Label>
+    <InspiredUnique.Settings.RequireLevel20CrafterForInspiredUniques.Label>Require level 20 Crafting for inspired uniques</InspiredUnique.Settings.RequireLevel20CrafterForInspiredUniques.Label>
+    <InspiredUnique.Settings.RequireLevel20CrafterForInspiredUniques.Tooltip>When enabled, only pawns with Crafting level 20 can create unique weapons while inspired.</InspiredUnique.Settings.RequireLevel20CrafterForInspiredUniques.Tooltip>
     <InspiredUnique.Settings.ShowWeaponCustomizationMenu.Label>Show Weapon Customization Menu</InspiredUnique.Settings.ShowWeaponCustomizationMenu.Label>
     <InspiredUnique.Settings.ShowWeaponCustomizationMenu.Tooltip>When enabled, a customization menu will appear when crafting unique weapons, allowing you to select traits and rename the weapon.</InspiredUnique.Settings.ShowWeaponCustomizationMenu.Tooltip>
     <InspiredUnique.Settings.CustomizationMenuNote.Label>These settings only apply when the Weapon Customization Menu is enabled:</InspiredUnique.Settings.CustomizationMenuNote.Label>

@@ -8,9 +8,22 @@ namespace SK_Inspired_Unique.Patches
 {
     public static class Toils_RecipePatches
     {
+        private const int RequiredCraftingLevel = 20;
         public static bool FINISHING_PRODUCT_FLAG = false;
         public static Thing uniqueWeapon = null;
         public static ThingDef uniqueWeaponDef = null;
+
+        private static bool MeetsInspiredUniqueCraftingRequirement(Pawn pawn)
+        {
+            if (!ModSettings.requireLevel20CrafterForInspiredUniques)
+            {
+                return true;
+            }
+
+            SkillRecord craftingSkill = pawn.skills.GetSkill(SkillDefOf.Crafting);
+            return craftingSkill.Level >= RequiredCraftingLevel;
+        }
+
         [HarmonyPatch(typeof(Toils_Recipe), "FinishRecipeAndStartStoringProduct")]
         public static class FinishRecipeAndStartStoringProduct
         {
@@ -20,7 +33,9 @@ namespace SK_Inspired_Unique.Patches
                 Action originalInitAction = __result.initAction;
                 __result.initAction = delegate
                 {
-                    if (originalToil.actor.InspirationDef != InspirationDefOf.Inspired_Creativity || !Rand.Chance(ModSettings.craftSuccessChance)) 
+                    if (originalToil.actor.InspirationDef != InspirationDefOf.Inspired_Creativity
+                        || !MeetsInspiredUniqueCraftingRequirement(originalToil.actor)
+                        || !Rand.Chance(ModSettings.craftSuccessChance))
                     {
                         originalInitAction();
                         return;

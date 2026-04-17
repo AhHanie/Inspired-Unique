@@ -35,6 +35,13 @@ namespace SK_Inspired_Unique
             );
 
             list.Gap(6f);
+            list.CheckboxLabeled(
+                "InspiredUnique.Settings.RequireLevel20CrafterForInspiredUniques.Label".Translate(),
+                ref ModSettings.requireLevel20CrafterForInspiredUniques,
+                "InspiredUnique.Settings.RequireLevel20CrafterForInspiredUniques.Tooltip".Translate()
+            );
+
+            list.Gap(6f);
             list.CheckboxLabeled("InspiredUnique.Settings.ShowWeaponCustomizationMenu.Label".Translate(), ref ModSettings.showCustomizationMenu, "InspiredUnique.Settings.ShowWeaponCustomizationMenu.Tooltip".Translate());
 
             list.Gap(6f);
